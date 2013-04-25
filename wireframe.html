@@ -4,6 +4,92 @@
 <head>
   <meta charset="UTF-8">
   <title>Cyrus' Blog</title>   
+
+  <style>
+
+  body{
+  width:984px;
+}
+
+*{
+  border: 1px dashed blue;
+}
+
+#top-bar{
+  float:top;
+  display:inline-block;
+  width:980px;
+  position:fixed
+}
+
+#title{
+  margin-left: 50px;
+  margin-top: 40px;
+  position:absolute;
+  display: inline-block;
+}
+
+#tagline{
+  positon:absolute;
+  margin-left: 300px;
+  margin-top: 50px;
+  display: inline-block;
+}
+
+#top-pic{
+  position:relative;
+  margin-top:-90px;
+  z-index: -1;
+}
+
+#nav1{
+  position: absolute;
+  margin-left: 920px;
+  margin-top: -120px;
+}
+
+#nav2{
+  position: absolute;
+  margin-left: 920px;
+  margin-top: -60px;
+}
+
+#nav3{
+  position: absolute;
+  margin-left: 860px;
+  margin-top: -60px;
+}
+
+#nav4{
+  position: absolute;
+  margin-left: 860px;
+  margin-top: -120px;
+}
+
+#right-bar{
+  overflow-y: scroll;
+  position: fixed;
+  height: 320px;
+  width: 310px;
+  margin-left: 670px;
+  margin-top: 140px;
+}
+
+#left-bar{
+  float:left;
+  width: 660px;
+  margin-top: 140px;
+}
+
+footer{
+  float: bottom;
+  width: 660px;
+}
+
+.center{
+  margin-left: auto;
+}
+  </style>
 </head>
 
 <body>
@@ -24,19 +110,19 @@
 		</div>
 	</header>
 
+  <div>
+    <p>Stories</p>
+  </div>
+        
 	<section id="right-bar">
 		<!--Right sidebar, independent scrolling-->
 		<div>
-			<div>
-				<!--free floating on top of sample stories-->
-				<h1>stories</h1>
-			</div>
-		</div>
-
-		<div>
+      <h6>Sample Title</h6>
+			<p>sample content</p>
+      <h6>Sample Title</h6>
+			<p>sample content</p>
 			<h6>Sample Title</h6>
 			<p>sample content</p>
-
 			<h6>Sample Title</h6>
 			<p>sample content</p>
 		</div>
@@ -74,3 +160,4 @@
     </section>
 </body>
 </html>
+
