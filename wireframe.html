@@ -3,28 +3,28 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Cyrus' Blog</title>
+  <title>Cyrus' Blog</title>   
 </head>
 
 <body>
-	<header style="border:1px solid black">
+	<header id="top-bar">
 		<div>
 			<!--Blog title and tagline overlaid on top of image-->
-			<h1>Cyrus' Blog</h1>
-			<h3>Blog tagline Lorem ipsum dolor sit amet</h3>
-			<img src="http://placehold.it/800x100">
+			<h1 id="title">Cyrus' Blog</h1>
+			<h3 id="tagline">Blog tagline Lorem ipsum dolor sit amet</h3>
+			<img id="top-pic" src="http://placehold.it/980x120">
 		</div>
 
 		<div>
 			<!--user action button cluser-->
-			<img src="http://placehold.it/40x40">
-			<img src="http://placehold.it/40x40">
-			<img src="http://placehold.it/40x40">
-			<img src="http://placehold.it/40x40">
+			<img src="http://placehold.it/40x40" class="nav" id="nav1">
+			<img src="http://placehold.it/40x40" class="nav" id="nav2">
+			<img src="http://placehold.it/40x40" class="nav" id="nav3">
+			<img src="http://placehold.it/40x40" class="nav" id="nav4">
 		</div>
 	</header>
 
-	<section style="border:1px solid black">
+	<section id="right-bar">
 		<!--Right sidebar, independent scrolling-->
 		<div>
 			<div>
@@ -42,24 +42,24 @@
 		</div>
 	</section>
 
-	<section style="border:1px solid black">
+	<section id="left-bar">
 		<!--Main panel, independent scrolling, shows current/most recent article-->
 		<article>
         	<header>
-          		<h1>Current/Most Recent Article Title</h1>
+          		<h1 class="center">Current/Most Recent Article Title</h1>
         	</header>
         	
         	<div>
-          		<img src="http://placehold.it/200x200">
+          		<img class="center" src="http://placehold.it/200x200">
         	</div>
 
-        	<p>ARTICLE TEXT Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        	<p class="center">ARTICLE TEXT Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
-        	<div>Show Comments</div>
+        	<div class="center">Show Comments</div>
     	</article>
 	</section>
 
-	<section style="border:1px solid black">
+	<section>
     	<footer>
         	<p>Cyrus Baumgarten</p>
 
