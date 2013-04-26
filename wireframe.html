@@ -7,22 +7,71 @@
 <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 <style>
 
-body{
-  width:984px;
+*{
+  border: 1px solid white;
+  font-family: sans-serif;
 }
 
-*{
-  border: 1px solid grey
+html{
+  border:none;
+}
+
+section{
+  border:none;
+}
+
+span{
+  border:none;
+}
+
+p{
+  border:none;
+}
+
+article{
+  border:none;
+}
+
+img{
+  border:none;
+}
+
+body{
+  border: 1px solid clear;
+  width: 990px;
+}
+
+div{
+  border:none;
+}
+
+header{
+  border:none;
+}
+
+footer{
+  border:none;
+}
+
+ul{
+  border:none;
+}
+
+li{
+  border:none;
 }
 
 #top-bar{
+  border: none;
   float:top;
   display:inline-block;
-  width:980px;
-  position:fixed
+  width:992px;
+  position:fixed;
+  z-index: +1;
 }
 
 #title{
+  border: none;
   margin-left: 50px;
   margin-top: 40px;
   position:absolute;
@@ -30,13 +79,18 @@ body{
 }
 
 #tagline{
+  border: none;
   positon:absolute;
-  margin-left: 300px;
+  margin-left: 280px;
   margin-top: 50px;
   display: inline-block;
 }
 
 #top-pic{
+  width:980px;
+  height:120px;
+  background-color:#A3A3A3;
+  border: 5px solid grey;
   position:relative;
   margin-top:-90px;
   z-index: -1;
@@ -44,48 +98,70 @@ body{
 
 #nav1{
   position: absolute;
-  margin-left: 920px;
-  margin-top: -120px;
+  margin-left: 700px;
+  margin-top: -90px;
+  border: 5px solid grey;
 }
 
 #nav2{
   position: absolute;
-  margin-left: 920px;
-  margin-top: -60px;
+  margin-left: 910px;
+  margin-top: -90px;
+  border: 5px solid grey;
 }
 
 #nav3{
   position: absolute;
-  margin-left: 860px;
-  margin-top: -60px;
+  margin-left: 770px;
+  margin-top: -90px;
+  border: 5px solid grey;
 }
 
 #nav4{
   position: absolute;
-  margin-left: 860px;
-  margin-top: -120px;
+  margin-left: 840px;
+  margin-top: -90px;
+  border: 5px solid grey;
 }
 
 #right-bar{
-  padding-top:50px;
+  border-right:5px solid grey;
+  border-bottom:5px solid grey;
+  padding-left:5px;
+  padding-top:90px;
+  padding-right:25px;
   overflow-y: scroll;
   position: fixed;
   height: 320px;
-  width: 310px;
-  margin-left: 670px;
+  width: 255px;
+  margin-left: 700px;
   margin-top: 140px;
+}
+
+#side-title{
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+#side-content{
+  color:grey;
 }
 
 #left-bar{
   float:left;
-  width: 660px;
+  width: 665px;
   margin-top: 140px;
+  border:none;
+  margin-bottom:20px;
+  border-left: 5px solid grey;
+  border-right: 5px solid grey;
 }
 
 .center{
   text-align: center;
   margin: auto;
   padding: 20px;
+  border:none;
 }
 
 #artpic{
@@ -94,24 +170,30 @@ body{
 
 #floater{
   z-index: +1;
-  background-color: gray;
-  width:250px;
+  background-color: #A3A3A3;
+  border:5px solid grey;
+  width:240px;
   padding: 10px;
   text-align: center;
-  margin-top: 145px;
+  margin-top: 150px;
   position:fixed;
-  margin-left: 685px
+  margin-left: 695px
 }
 
 #comment-button{
   width: 200px;
-  background-color:gray;
+  background-color:#A3A3A3;
+  border: 5px solid grey;
 }
 
 #bottom-bar{
-  margin-top:650px;
+  float:bottom;
+  clear:both;
   position:relative;
-  width: 660px;
+  width: 625px;
+  padding:20px;
+  border: 5px solid grey;
+  background-color: #A3A3A3;
 }
 
 </style>
@@ -119,73 +201,140 @@ body{
 </head>
 
 <body>
-	<header id="top-bar">
-		<div>
-			<!--Blog title and tagline overlaid on top of image-->
-			<h1 id="title">Cyrus' Blog</h1>
-			<h3 id="tagline">Blog tagline Lorem ipsum dolor sit amet</h3>
-			<img id="top-pic" src="http://placehold.it/980x120">
-		</div>
+  <header id="top-bar">
+    <div>
+      <!--Blog title and tagline overlaid on top of image-->
+      <h1 id="title">Cyrus' Blog</h1>
+      <h3 id="tagline">Blog tagline Lorem ipsum dolor sit amet</h3>
+      <div id="top-pic">
+    </div>
 
-		<div>
-			<!--user action button cluser-->
-			<img src="http://placehold.it/40x40" class="nav" id="nav1">
-			<img src="http://placehold.it/40x40" class="nav" id="nav2">
-			<img src="http://placehold.it/40x40" class="nav" id="nav3">
-			<img src="http://placehold.it/40x40" class="nav" id="nav4">
-		</div>
-	</header>
+    <div>
+      <!--user action button cluser-->
+      <img src="http://placehold.it/40x40" class="nav" id="nav1">
+      <img src="http://placehold.it/40x40" class="nav" id="nav2">
+      <img src="http://placehold.it/40x40" class="nav" id="nav3">
+      <img src="http://placehold.it/40x40" class="nav" id="nav4">
+    </div>
+  </header>
 
   <div>
     <h1 id="floater">Stories</h1>
   </div>
         
-	<section id="right-bar">
-		<!--Right sidebar, independent scrolling-->
-		<div>
-      <h6>Sample Title</h6>
-			<p>sample content</p>
-      <h6>Sample Title</h6>
-			<p>sample content</p>
-			<h6>Sample Title</h6>
-			<p>sample content</p>
-			<h6>Sample Title</h6>
-			<p>sample content</p>
-      <h6>Sample Title</h6>
-			<p>sample content</p>
-      <h6>Sample Title</h6>
-			<p>sample content</p>
-      <h6>Sample Title</h6>
-			<p>sample content</p>
-		</div>
-	</section>
+  <section id="right-bar">
+    <!--Right sidebar, independent scrolling-->
+    <div>
+      
+      <div>
+        <!-- new story -->
+        <span id="side-title">Sample Title </span>
+        <br>
+        <span id="side-content">sample content sample content sample content sample content</span>
+        <br></br>
+      </div>
+      
+     <div>
+        <!-- new story -->
+        <span id="side-title">Sample Title</span>
+        <br>
+        <span id="side-content">sample content</span>
+        <br></br>
+      </div>
+       
+       <div>
+        <!-- new story -->
+        <span id="side-title">Sample Title</span>
+        <br>
+        <span id="side-content">sample content</span>
+        <br></br>
+      </div>
+         
+         <div>
+        <!-- new story -->
+        <span id="side-title">Sample Title</span>
+        <br>
+        <span id="side-content">sample content</span>
+        <br></br>
+      </div>
+           
+         <div>
+        <!-- new story -->
+        <span id="side-title">Sample Title</span>
+        <br>
+        <span id="side-content">sample content</span>
+        <br></br>
+      </div>
+           
+         <div>
+        <!-- new story -->
+        <span id="side-title">Sample Title</span>
+        <br>
+        <span id="side-content">sample content</span>
+        <br></br>
+      </div>
+           
+         <div>
+        <!-- new story -->
+        <span id="side-title">Sample Title</span>
+        <br>
+        <span id="side-content">sample content</span>
+        <br></br>
+      </div>
+         
+           <div>
+        <!-- new story -->
+        <span id="side-title">Sample Title</span>
+        <br>
+        <span id="side-content">sample content</span>
+        <br></br>
+      </div>
+             
+           <div>
+        <!-- new story -->
+        <span id="side-title">Sample Title</span>
+        <br>
+        <span id="side-content">sample content</span>
+        <br></br>
+      </div>
+             
+           <div>
+        <!-- new story -->
+        <span id="side-title">Sample Title</span>
+        <br>
+        <span id="side-content">sample content </span>
+        <br></br>
+      </div>
+       
+    </div>
+  </section>
 
-	<section id="left-bar">
-		<!--Main panel, independent scrolling, shows current/most recent article-->
-		<article>
-        	<header>
-          		<h1 class="center">Current/Most Recent Article Title</h1>
-        	</header>
-        	
-        	<div>
-          		<img id="artpic" class="center" src="http://placehold.it/200x200">
-        	</div>
+  <section id="left-bar">
+    <!--Main panel, independent scrolling, shows current/most recent article-->
+    <article>
+          <header>
+              <h1 class="center">Current/Most Recent Article Title</h1>
+          </header>
+          
+          <div>
+              <img id="artpic" class="center" src="http://placehold.it/200x200">
+          </div>
 
-        	<p class="center">ARTICLE TEXT 	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum...</p>
+          <p class="center">ARTICLE TEXT  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum...</p>
 
-        	<div id="comment-button" class="center">Show Comments</div>
-    	</article>
-	</section>
+          <div id="comment-button" class="center">Show Comments</div>
+      </article>
+  </section>
 
-	<section id="bottom-bar">
-    	<footer>
-        	<p>Cyrus Baumgarten</p>
-          		<ul>
-            		<li>About</li>
-            		<li>Portfolio</li>
-            		<li>Resume</li>
-          		</ul> 
-      	</footer>
+  <section id="bottom-bar">
+      <footer>
+          <p>Cyrus Baumgarten</p>
+              <ul>
+                <li>About</li>
+                <li>Portfolio</li>
+                <li>Resume</li>
+              </ul> 
+        </footer>
     </section>
 </body>
 </html>
